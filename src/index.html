@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row m-1">
+            <div class="col-md-3">
+                <button class="btn btn-primary">Agregar uno nuevo</button>
+            </div>
+
+            <div class="col-md-2">
+                <button class="btn btn-danger">Eliminar el ultimo</button>
+            </div>
+        </div>
+
+         <div class="row m-1">
+        <!--     <div class="col-md-3">
+                <button class="btn btn-secondary" id="previous"></button>
+            </div> -->
+
+            <input type="text" maxlength="2" id="perPage">
+<!-- 
+            <div class="col-md-2">
+                <button class="btn btn-secondary" id="next"></button>
+            </div> -->
+        </div> 
+
+        <div class="row">
+            <div class="col-md-8">
+                <table id="table" class="table table-sm table-bordered table-hover">
+                    <thead class="thead-dark">
+
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+
+                    <tfoot class="thead-dark">
+
+                    </tfoot>
+                </table>
+
+                <div class="row">
+                    <div class="col">
+                        <span class="text-muted float-right"></span>
+                    </div>
+                </div>
+
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <button class="page-item disabled" tabindex="-1" id="previous">Anterior</button>
+
+
+                        <button class="page-item" id="next">Siguiente</a>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- Fin container de la tabla  -->
+
+            <div class="col-md-4 bg-ligth">
+                <p id="parrafo" class="text-success"></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
